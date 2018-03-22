@@ -1,0 +1,54 @@
+<html>
+<head>
+<title> Digital Calculator </title>
+<script language="javascript">
+function calculator(ch)
+{
+
+    {
+    if(ch=="=")
+            document.f.result.value=eval(document.f.result.value);
+    else if(ch=="c")
+            document.f.result.value="";
+    else{
+            document.f.result.value += ch;
+          }
+    return document.f.result.value;
+    }
+
+}
+</script>
+</head>
+<body>
+<h1 align="center"><font color="red">DIGITAL CALCULATOR</font></center>
+<form name="f">
+<table>
+<tr>
+<td><input type="button" value="7" onclick="calculator('7')"/></td>
+<td><input type="button" value="8" onclick="calculator('8')"/></td>
+<td><input type="button" value="9" onclick="calculator('9')"/></td>
+<td><input type="button" value="*" onclick="calculator('*')"/></td>
+</tr>
+<tr>
+<td><input type="button" value="4" onclick="calculator('4')"/></td>
+<td><input type="button" value="5" onclick="calculator('5')"/></td>
+<td><input type="button" value="6" onclick="calculator('6')"/></td>
+<td><input type="button" value="/" onclick="calculator('/')"/></td>
+</tr>
+<tr>
+<td><input type="button" value="1" onclick="calculator('1')"/></td>
+<td><input type="button" value="2" onclick="calculator('2')"/></td>
+<td><input type="button" value="3" onclick="calculator('3')"/></td>
+<td><input type="button" value="-" onclick="calculator('-')"/></td>
+</tr>
+<tr>
+<td><input type="button" value="0" onclick="calculator('0')"/></td>
+<td><input type="button" value="c" onclick="calculator('c')"/></td>
+<td><input type="button" value="=" onclick="calculator('=')"/></td>
+<td><input type="button" value="+" onclick="calculator('+')"/></td>
+</tr>
+</table>
+<br>Solution is <input type="textfield" name="result" value="">
+</form>
+</body>
+</html>
