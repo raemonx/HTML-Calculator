@@ -1,2 +1,2 @@
 # HTML-Calculator
-Simple HTML calculator using javascript
+Simple HTML calculator using javascript using eval() function
